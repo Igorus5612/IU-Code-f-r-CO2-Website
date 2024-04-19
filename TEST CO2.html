@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footspring - CO² Emissions</title>
+    <style>
+        body {
+        splay: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;    
+        }
+        header {
+            background-color: #176105;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+        header img {
+            width: 20px; /* Logo */
+            margin-right: 10px; /* Abstand  */
+        }
+        main {
+            flex: 1;
+            padding: 2rem;
+        }
+        footer {
+            background-color: #f5f5f5;
+            color: #6c757d;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f5f5f5;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #0f24df;
+        }
+        .rtl nav ul {
+            justify-content: flex-end;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f5f5f5;
+        }
+        @media screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <?xml version="1.0" encoding="iso-8859-1"?>
+        
+        <svg height="100px" width="100px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+             viewBox="0 0 110.473 110.473" xml:space="preserve">
+        <g>
+            <g>
+                <path style="fill:#010002;" d="M88.28,77.766l-2.097,2.097l-7.251-7.251c14.283-17.493,13.489-43.265-2.831-59.584
+                    C58.723-4.344,30.428-4.344,13.049,13.035c-17.4,17.397-17.397,45.673-0.004,63.067c16.302,16.295,42.084,17.103,59.588,2.831
+                    l7.24,7.236l-2.108,2.108l22.2,22.196l10.508-10.508L88.28,77.766z M69.037,74.244c-15.171,12.483-37.614,11.821-51.782-2.348
+                    C2.177,56.833,2.18,32.3,17.255,17.244c15.06-15.06,39.582-15.063,54.638-0.007c14.183,14.183,14.845,36.619,2.348,51.804
+                    L69.037,74.244z"/>
+                <path style="fill:#010002;" d="M57.699,29.752c2.466,0.05,4.305-0.952,5.297-2.401c0.995-1.446,0.251-3.461-0.798-3.98
+                    c-1.045-0.512-2.559-0.233-3.604,1.049C57.549,25.697,58.483,28.37,57.699,29.752z"/>
+                <path style="fill:#010002;" d="M58.801,22.362c1.12-1.621,0.279-3.887-0.898-4.466c-1.177-0.576-2.877-0.265-4.048,1.17
+                    c-1.174,1.442-0.132,4.445-1.009,5.995C55.616,25.117,57.685,23.997,58.801,22.362z"/>
+                <path style="fill:#010002;" d="M45.517,23.693c3.786-1.102,6.116-3.504,6.947-6.188c0.83-2.681-1.263-5.4-3.11-5.69
+                    c-1.843-0.29-4.019,0.855-5,3.307C43.366,17.573,46.057,21.209,45.517,23.693z"/>
+                <path style="fill:#010002;" d="M30.779,62.409c-3.429,4.194-2.19,12.182,4.585,12.351c3.901,0.093,6.975-2.945,8.707-7.977
+                    c1.696-4.942,0.279-12.569-1.349-15.589C42.514,57.399,34.934,57.334,30.779,62.409z"/>
+                <path style="fill:#010002;" d="M44.35,25.472c-5.619,1.138-6.682,10.944-2.885,16.445c3.203,4.638,7.186,13.063,5.1,19.548
+                    c1.385-4.019,13.324-14.369,12.025-22.447C57.291,30.933,50.216,24.28,44.35,25.472z"/>
+                <path style="fill:#010002;" d="M64.746,33.889c1.202-0.877,1.167-2.695,0.476-3.403c-0.694-0.705-1.979-0.902-3.171-0.172
+                    c-1.192,0.73-1.195,3.124-2.212,4.015C61.797,35.056,63.547,34.769,64.746,33.889z"/>
+                <path style="fill:#010002;" d="M62.717,35.993c-1.142,0.483-1.478,2.577-2.484,3.207c1.618,0.905,3.182,0.898,4.352,0.293
+                    c1.174-0.601,1.392-2.197,0.884-2.906C64.957,35.872,63.862,35.521,62.717,35.993z"/>
+            </g>
+        </g>
+        </svg>
+        <h1>Footspring</h1>
+    </header>
+    <nav class="rtl">
+        <ul>
+            <li><a href="#" onclick="showContent('home')">Home</a></li>
+            <li><a href="#" onclick="showContent('about')">About</a></li>
+            <li><a href="#" onclick="showContent('emissions')">CO² Emissions</a></li>
+        </ul>
+    </nav>
+    <!-- Platzhalter für die Inhalte der verschiedenen Reiter -->
+    <main id="home" style="display: none;">
+        <h2>Hallo</h2>
+    </main>
+    <main id="about" style="display: none;">
+        <h2>About Placeholder</h2>
+    </main>
+    <main id="emissions" style="display: none;">
+        <button onclick="showAll()">Alle anzeigen</button>
+        <button onclick="sortTable()">Sortieren</button>
+        <button onclick="filterBy('Betrieb')">Nur Betriebe</button>
+        <button onclick="filterBy('Staat')">Nur Staaten</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Emittenten</th>
+                <th>Betrieb/Staat</th>
+                <th>CO² Emissionen (in Tonnen/Jahr)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Deutschland</td>
+                <td>Staat</td>
+                <td>15.000</td>
+            </tr>
+            <tr>
+                <td>England</td>
+                <td>Staat</td>
+                <td>12.000</td>
+            </tr>
+            <tr>
+                <td>Belgien</td>
+                <td>Staat</td>
+                <td>10.000</td>
+            </tr>
+            <tr>
+                <td>Polen</td>
+                <td>Staat</td>
+                <td>9.000</td>
+            </tr>
+            <tr>
+                <td>NVIDIA</td>
+                <td>Betrieb</td>
+                <td>700</td>
+            </tr>
+            <tr>
+                <td>ARM</td>
+                <td>Betrieb</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>AMD</td>
+                <td>Betrieb</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td>Bosch</td>
+                <td>Betrieb</td>
+                <td>0</td>
+            </tr>
+            
+
+
+
+
+
+
+        </tbody>
+    </table>
+
+</main>
+<footer>
+    &copy; 2023 Footspring - All rights reserved.
+</footer>
+<script>
+    // Funktion zum Anzeigen des Inhalts basierend auf dem ausgewählten Reiter
+    function showContent(tab) {
+        var contentElements = document.querySelectorAll('main');
+        contentElements.forEach(function(contentElement) {
+            if (contentElement.id === tab) {
+                contentElement.style.display = 'block';
+            } else {
+                contentElement.style.display = 'none';
+            }
+        });
+    }
+    window.onload = function() {
+            showContent('home');
+        };
+        // Funktion zum Sortieren der Tabellenzeilen nach Betrieb und Staat
+        function showAll() {
+    var table = document.querySelector('table');
+    var rows = Array.from(table.querySelectorAll('tbody tr'));
+
+    rows.forEach(function(row) {
+        row.style.display = 'table-row';
+    });
+}
+function sortTable() {
+    var table = document.querySelector('table');
+    var tbody = table.querySelector('tbody');
+    var rows = Array.from(tbody.querySelectorAll('tr'));
+
+    // Sortieren der Tabellenzeilen basierend auf Betrieb und Staat
+    rows.sort(function(rowA, rowB) {
+        var betriebA = rowA.children[1].textContent.toLowerCase();
+        var staatA = rowA.children[2].textContent.toLowerCase();
+        var betriebB = rowB.children[1].textContent.toLowerCase();
+        var staatB = rowB.children[2].textContent.toLowerCase();
+
+        if (betriebA === betriebB) {
+            // Wenn Betrieb gleich ist, nach Staat sortieren
+            return staatA.localeCompare(staatB);
+        } else {
+            // Andernfalls nach Betrieb sortieren
+            return betriebA.localeCompare(betriebB);
+        }
+    });
+
+    // Entfernen und Neuanordnen der sortierten Zeilen in der Tabelle
+    rows.forEach(function(row) {
+        tbody.appendChild(row);
+    });
+}
+function filterBy(type) {
+    // Gültige Typen definieren
+    var validTypes = ['Betrieb', 'Staat'];
+
+    // Überprüfen, ob der übergebene Typ gültig ist
+    if (validTypes.includes(type)) {
+        var table = document.querySelector('table');
+        var rows = Array.from(table.querySelectorAll('tbody tr'));
+
+        rows.forEach(function(row) {
+            var cell = row.querySelector('td:nth-child(2)');
+            if (cell.textContent.trim() === type) {
+                row.style.display = 'table-row';
+            } else {
+                row.style.display = 'none';
+            }
+        });
+    } else {
+        // Ungültiger Typ, hier können Sie eine Fehlermeldung anzeigen oder andere Maßnahmen ergreifen
+        console.error('Ungültiger Typ: ' + type);
+    }
+}
+
+</script>
+</body>
+</html>
